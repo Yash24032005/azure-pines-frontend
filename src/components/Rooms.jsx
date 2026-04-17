@@ -212,7 +212,7 @@ const rooms = [
 
 export default function Rooms() {
   const [loadingIndex, setLoadingIndex] = useState(null);
-  const BASE_URL = "https://azure-pines-backend.onrender.com/api";
+  const BASE_URL = "https://azure-pines-backend.onrender.com/api/bookings";
 
   const handlePayment = async (roomData, index) => {
     try {
