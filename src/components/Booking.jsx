@@ -71,7 +71,21 @@ export default function Booking() {
       <input placeholder="Email" onChange={e => setForm({ ...form, email: e.target.value })} />
       <input placeholder="Room" onChange={e => setForm({ ...form, room: e.target.value })} />
 
-      <button onClick={book}>Book Now</button>
+      <button 
+        onClick={book} 
+        disabled={loading}
+        style={{ 
+          padding: "10px", 
+          background: loading ? "#ccc" : "#c9a84c", 
+          color: "#000", 
+          fontWeight: "bold", 
+          cursor: "pointer",
+          border: "none",
+          borderRadius: "5px"
+        }}
+      >
+        {loading ? "Booking..." : "Book Now"}
+      </button>
     </div>
   );
 }
