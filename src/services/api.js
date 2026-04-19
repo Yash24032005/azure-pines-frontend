@@ -19,7 +19,7 @@
 // };
 
 const BASE_URL = "https://azure-pines-backend.onrender.com/api";
-
+// const BASE_URL = "http://localhost:5000/api";
 export const createBooking = async (data) => {
   try {
     const res = await fetch(`${BASE_URL}/bookings`, {

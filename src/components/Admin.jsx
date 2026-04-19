@@ -4,7 +4,8 @@ export default function Admin(){
   const [data,setData]=useState([]);
 
   useEffect(()=>{
-    fetch("http://localhost:5000/api/admin/bookings")
+    // fetch("http://localhost:5000/api/admin/bookings")
+   fetch("https://azure-pines-backend.onrender.com/api/admin/bookings")
       .then(res=>res.json())
       .then(setData);
   },[]);
